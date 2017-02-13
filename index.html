@@ -55,7 +55,8 @@
        justify-content: space-between
      }
      .sidebar {
-       flex: 0 0 25%
+       flex: 0 0 25%;
+       color: #999;
      }
      .content {
        flex: 1
@@ -64,6 +65,10 @@
      .inline-image {
        display: inline-block;
        width: 10rem;
+     }
+
+     .active {
+       color: #222;
      }
     </style>
   </head>
@@ -80,9 +85,30 @@ class: center, middle
 
 ---
 
-.box[
 .sidebar[
 ## me
+## games
+## clojure
+## learning
+## end
+]
+
+---
+
+class: center, middle
+
+#me
+
+---
+
+.box[
+.sidebar[
+.active[
+## me]
+## games
+## clojure
+## learning
+## end
 ]
 .content[
 Hi, I'm Lisa.
@@ -92,11 +118,14 @@ Hi, I'm Lisa.
 
 .box[
 .sidebar[
-## me
+.active[
+## me]
+## games
+## clojure
+## learning
+## end
 ]
 .content[
-Hi, I'm Lisa.
-
 I'm a web developer
 
 working at Travis CI.
@@ -108,7 +137,30 @@ working at Travis CI.
 
 .box[
 .sidebar[
-## me
+.active[
+## me]
+## games
+## clojure
+## learning
+## end
+]
+.content[
+I'm involved with Berlin chapters of
+- RailsGirls
+- CryptoParty
+- ClojureBridge
+]]
+
+---
+
+.box[
+.sidebar[
+.active[
+## me]
+## games
+## clojure
+## learning
+## end
 ]
 .content[
 I like making video games
@@ -116,9 +168,20 @@ I like making video games
 
 ---
 
+class: center, middle
+
+# games
+
+---
+
 .box[
 .sidebar[
-## games
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
 ]
 .content[
 What kind of games?
@@ -128,7 +191,50 @@ What kind of games?
 
 .box[
 .sidebar[
-## games
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
+]
+.content[
+What kind of games?
+
+Indie games!
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
+]
+.content[
+Indie games!
+
+- not funded by a publisher/ little to no budget
+- made by individuals or small teams
+- absolute creative freedom
+
+ [source](https://en.wikipedia.org/wiki/Indie_box)
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
 ]
 .content[
 Where do you make them?
@@ -138,30 +244,117 @@ Where do you make them?
 
 .box[
 .sidebar[
-## games
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
 ]
 .content[
-Why do you make them?
+Where do you make them?
+
+At game jams!
 ]]
 
 ---
 
 .box[
 .sidebar[
-## games
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
+]
+.content[
+Game jams!
+
+- think of a jam session or hackathon
+- people get together to make games without preparation and usually from scratch
+- there is a time constraint and a theme
+- eg LDJam, GGJ, NGJ
+
+[source](https://en.wikipedia.org/wiki/Game_jam)
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
+]
+.content[
+Why games?
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
+]
+.content[
+Why games?
+
+- artistic expression (like writing a story or a song or making a movie)
+- Your experience for other people to experience
+- interdiciplinary media (code, graphics, audio, story)
+- Human machine interaction (esp with non-standard controls [altctrl](http://altctrlgamejam.com/))
+- prgammatic challenges
+- fun
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## learning
+## end
 ]
 .content[
 EXAMPLES!
+
+- sea shell seeker
+- sara vs coffee
+- ukulele hero
+- swaj
 ]]
+
+---
+
+class: center, middle
+
+# clojure
 
 ---
 
 .box[
 .sidebar[
-## clojure
+## me
+## games
+.active[
+## clojure]
+## learning
+## end
 ]
 .content[
-Introducing Clojure
+Clojure
 ]]
 
 ---
@@ -182,6 +375,14 @@ ClojureBridge
 ]
 .content[
 Functional game making
+
+immutability
+how do i state?
+
+lots of conditionals
+homoiconicity (atom as functions)
+
+pow in clojure
 ]]
 
 ---
