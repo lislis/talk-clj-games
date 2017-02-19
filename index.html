@@ -8,61 +8,48 @@
       html, body {
       font-family: Overpass, sans-serif;
       font-weight: 600;
-      color: #333;
+      color: #444;
       font-size: 16px;
       }
-      .intro-image {
-      max-width: 200px;
-      display: inline-block;
-      margin-right: 1.4em;
-      }
-      .intro-image img {
-      width: 100%;
-      height: auto;
-      vertical-align: top;
-      }
-      ul {
-      font-size: 36px;
+     .intro p,
+     .intro h1 {
+       margin: 0;
+     }
+     .intro {
+       margin-bottom: 5rem;
+     }
+     ul,
+     ol{
+      font-size: 30px;
       line-height: 1.45;
       }
       p {
-      font-size: 36px;
-      }
-      .deadline {
-      font-size: 60px;
-      color: crimson;
-      border: 5px solid crimson;
-      text-align: center;
-      border-radius: 2px;
-      line-height: 2;
-      background: pink;
-      transform: translateY(190%);
+      font-size: 30px;
       }
       a {
       text-decoration: none;
-      color: #333;
-      border-bottom: 3px solid #27A8DF;
+      color: inherit;
+      border-bottom: 2px solid #791AD2;
       }
       a:hover,
       a:active {
       border-bottom: none;
-      background-color: #b1eefc;
+      background-color: #d2c4f5;
       }
-
 
      .box {
        display: flex;
        justify-content: space-between
      }
      .sidebar {
-       flex: 0 0 25%;
+       flex: 0 0 30%;
        color: #999;
      }
      .sidebar.foo {
        color: inherit;
      }
      .content {
-       flex: 1
+       flex: 1;
      }
 
      .inline-image {
@@ -71,7 +58,28 @@
      }
 
      .active {
-       color: #222;
+       color: #444;
+     }
+     img {
+       width: 100%;
+       height: auto;
+     }
+     .img-s {
+       display: block;
+       width: 300px;
+       height: auto;
+     }
+     .img-xs {
+       display: inline-block;
+       width: 50px;
+       vertical-align: middle;
+     }
+     .img-m {
+       width: 500px;
+       display: block;
+     }
+     .source {
+       font-size: .7em;
      }
     </style>
   </head>
@@ -80,9 +88,11 @@
 
 class: center, middle
 
+.intro[
 # Making video games
 &
 #learning Clojure
+]
 
 .wrap[ [:clojureD](http://clojured.de) -  Berlin - February 2017]
 
@@ -92,8 +102,8 @@ class: center, middle
 ## me
 ## games
 ## clojure
+## jamming
 ## learning
-## end
 ]
 
 ---
@@ -110,13 +120,13 @@ class: center, middle
 ## me]
 ## games
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
 Hi, I'm Lisa.
-
 ]]
+
 ---
 
 .box[
@@ -125,8 +135,26 @@ Hi, I'm Lisa.
 ## me]
 ## games
 ## clojure
+## jamming
 ## learning
-## end
+]
+.content[
+Hi, I'm Lisa.
+
+I made stickers for this conference.
+.img-s[![repl](assets/repl.png)]
+]]
+
+---
+
+.box[
+.sidebar[
+.active[
+## me]
+## games
+## clojure
+## jamming
+## learning
 ]
 .content[
 I'm a web developer
@@ -144,14 +172,17 @@ working at Travis CI.
 ## me]
 ## games
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
 I'm involved with Berlin chapters of
-- RailsGirls
-- CryptoParty
-- ClojureBridge
+
+.img-xs[![rg](assets/railsgirls.png)] RailsGirls
+
+.img-xs[![cp](assets/cp.png)] CryptoParty
+
+.img-xs[![cljb](assets/cljbridge.png)] ClojureBridge
 ]]
 
 ---
@@ -162,11 +193,11 @@ I'm involved with Berlin chapters of
 ## me]
 ## games
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-I like laying and making video games
+I like playing and making video games
 ]]
 
 ---
@@ -183,11 +214,11 @@ class: center, middle
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-What kind of games?
+## What kind of games?
 ]]
 
 ---
@@ -198,11 +229,11 @@ What kind of games?
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-What kind of games?
+## What kind of games?
 
 Indie games!
 ]]
@@ -215,17 +246,67 @@ Indie games!
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-Indie games!
+## Indie games!
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Indie games!
+
+- not funded by a publisher/ little to no budget
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Indie games!
+
+- not funded by a publisher/ little to no budget
+- made by individuals or small teams
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Indie games!
 
 - not funded by a publisher/ little to no budget
 - made by individuals or small teams
 - absolute creative freedom
 
- [Wikipedia on Indie games](https://en.wikipedia.org/wiki/Indie_box)
+.source[[Wikipedia on Indie games](https://en.wikipedia.org/wiki/Indie_box)]
 ]]
 
 ---
@@ -236,11 +317,11 @@ Indie games!
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-Where do you make them?
+## Where do you make them?
 ]]
 
 ---
@@ -251,11 +332,11 @@ Where do you make them?
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-Where do you make them?
+## Where do you make them?
 
 At game jams!
 ]]
@@ -268,18 +349,87 @@ At game jams!
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-Game jams!
+## Game jams!
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Game jams!
+
+- think of a jam session or hackathon
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Game jams!
+
+- think of a jam session or hackathon
+- people get together to make games without preparation and usually from scratch
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Game jams!
+
+- think of a jam session or hackathon
+- people get together to make games without preparation and usually from scratch
+- there is a time constraint and a theme
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Game jams!
 
 - think of a jam session or hackathon
 - people get together to make games without preparation and usually from scratch
 - there is a time constraint and a theme
 - eg [LDJam](https://ldjam.com/), [GGJ](http://globalgamejam.org/), [NGJ](https://nordicgamejam.org/)
 
-[Wikipedia on Game Jams](https://en.wikipedia.org/wiki/Game_jam)
+.source[[Wikipedia on Game Jams](https://en.wikipedia.org/wiki/Game_jam)]
 ]]
 
 ---
@@ -290,11 +440,18 @@ Game jams!
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-Why games?
+## Game jams!
+
+- think of a jam session or hackathon
+- people get together to make games without preparation and usually from scratch
+- there is a time constraint and a theme
+- eg [LDJam](https://ldjam.com/), [GGJ](http://globalgamejam.org/), [NGJ](https://nordicgamejam.org/)
+
+.source[[Wikipedia on Game Jams](https://en.wikipedia.org/wiki/Game_jam)]
 ]]
 
 ---
@@ -305,16 +462,105 @@ Why games?
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-Why games?
+## Why games?
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Why games?
+
+- Artistic expression (like writing a story or a song or making a movie)
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Why games?
+
+- Artistic expression (like writing a story or a song or making a movie)
+- Your experience for other people to experience
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Why games?
 
 - Artistic expression (like writing a story or a song or making a movie)
 - Your experience for other people to experience
 - Interdiciplinary media (code, graphics, audio, story)
-- Interdiciplinary hardware (esp with non-standard controls [altctrl](http://altctrlgamejam.com/))
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Why games?
+
+- Artistic expression (like writing a story or a song or making a movie)
+- Your experience for other people to experience
+- Interdiciplinary media (code, graphics, audio, story)
+- Human machine interaction (eg non-standard controls [altctrl](http://altctrlgamejam.com/))
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Why games?
+
+- Artistic expression (like writing a story or a song or making a movie)
+- Your experience for other people to experience
+- Interdiciplinary media (code, graphics, audio, story)
+- Human machine interaction (eg non-standard controls [altctrl](http://altctrlgamejam.com/))
 - FUN
 ]]
 
@@ -326,16 +572,68 @@ Why games?
 .active[
 ## games]
 ## clojure
+## jamming
 ## learning
-## end
 ]
 .content[
-EXAMPLES!
+## Examples!
 
-- sea shell seeker
-- sara vs coffee
-- ukulele hero
-- swaj
+![sea shell seeker](assets/seashell.png)
+.source[Sea Shell Seeker | Lua + Love2D]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Examples!
+
+![sara vs coffee](assets/sara.png)
+.source[Sara vs Coffee | Ruby + Gosu]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Examples!
+
+![Ukulele](assets/ukulele.png)
+.source[Ukulele Hero | vanilla JavaScript]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+.active[
+## games]
+## clojure
+## jamming
+## learning
+]
+.content[
+## Examples!
+
+.img-m[![swaj](assets/swaj.png)]
+.source[Swaj | vanilla JavaScript]
 ]]
 
 ---
@@ -352,8 +650,8 @@ class: center, middle
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
 Getting to know Clojure
@@ -367,32 +665,13 @@ Getting to know Clojure
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
-]
-.content[
-Getting to know Clojure
-
-through people in the Ruby community
-]]
-
----
-
-.box[
-.sidebar[
-## me
-## games
-.active[
-## clojure]
-## learning
-## end
 ]
 .content[
 Getting to know Clojure
 
 through people in the Ruby community
-
-who organized the first ClojureBridge workshop in Berlin
 ]]
 
 ---
@@ -403,11 +682,15 @@ who organized the first ClojureBridge workshop in Berlin
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
-ClojureBridge
+Getting to know Clojure
+
+through people in the Ruby community
+
+who organized the first ClojureBridge workshop in Berlin.
 ]]
 
 ---
@@ -418,11 +701,26 @@ ClojureBridge
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
-ClojureBridge
+## ClojureBridge
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## ClojureBridge
 
 - free (as in beer and software!)
 - Clojure programming workshop
@@ -437,11 +735,11 @@ ClojureBridge
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
-Quil
+## Quil
 ]]
 
 ---
@@ -452,15 +750,13 @@ Quil
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
-Quil
+## Quil
 
-- easy graphics
-- and interaction
-- alomst a game!
+- CLJ wrapper around Processing
 ]]
 
 ---
@@ -471,17 +767,70 @@ Quil
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
-ClojureBridge Berlin
+## Quil
+
+- CLJ wrapper around Processing
+- easy graphics and interaction
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## Quil
+
+- CLJ wrapper around Processing
+- easy graphics and interaction
+- almost a game!
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## ClojureBridge Berlin
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## ClojureBridge Berlin
 
 4 workshops so far (since 2015)
-- participated 1st
-- help organized and MCed 2nd
-- coached 3rd
-- help organized and MCed 4th
+
+1. participated
+2. help organized
+3. coached
+4. help organized
 ]]
 
 ---
@@ -492,16 +841,203 @@ ClojureBridge Berlin
 ## games
 .active[
 ## clojure]
+## jamming
 ## learning
-## end
 ]
 .content[
-Learning Clojure
+## Learning Clojure
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## Learning Clojure
+(or any programming language)
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## Learning Clojure
+(or any programming language)
+
+- you learn by progamming
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## Learning Clojure
+(or any programming language)
+
+- you learn by progamming
+- you stay motivated with a project
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## Learning Clojure
+(or any programming language)
 
 - you learn by progamming
 - you stay motivated with a project
 - finish it with a deadline
-- Let's write a game already!
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+.active[
+## clojure]
+## jamming
+## learning
+]
+.content[
+## Learning Clojure
+(or any programming language)
+
+- you learn by progamming
+- you stay motivated with a project
+- finish it with a deadline
+- let's write a game already!
+]]
+
+---
+
+class: center, middle
+
+# jamming
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+## clojure
+.active[
+## jamming]
+## learning
+]
+.content[
+Anti Pong!
+
+.img-m[![screenshot](assets/pong.gif)]
+.source[with quil | ClojureBridge Berlin | on GitHub]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+## clojure
+.active[
+## jamming]
+## learning
+]
+.content[
+Mermaid Situation
+
+.img-m[![screenshot](assets/mermaid.gif)]
+.source[with quil-cljs | Ludum Dare 37 | on GitHub]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+## clojure
+.active[
+## jamming]
+## learning
+]
+.content[
+Cats, dogs, night time maybe?
+
+.img-m[![screenshot](assets/catsdogs.gif)]
+.source[with play-clj | Berlin Mini Jam  | on GitHub]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+## clojure
+.active[
+## jamming]
+## learning
+]
+.content[
+Being famous is hard
+
+.img-m[![screenshot](assets/being-fame.gif)]
+.source[with play-cljs | Global Game Jam 2017 | on GitHub]
+]]
+
+---
+
+.box[
+.sidebar[
+## me
+## games
+## clojure
+.active[
+## jamming]
+## learning
+]
+.content[
+Creep Mate
+
+.img-m[![screenshot](assets/creep.png)]
+.source[with play-cljs | Lady Problems Hackathon  | on GitHub]
+
+[play now!](https://creep-mate.herokuapp.com/)
 ]]
 
 ---
@@ -517,16 +1053,12 @@ class: center, middle
 ## me
 ## games
 ## clojure
+## jamming
 .active[
 ## learning]
-## end
 ]
 .content[
-Anti Pong!
-
-![screenshot]()
-
-.wrapper[with quil | ClojureBridge Berlin | on GitHub]
+## Functional game programming
 ]]
 
 ---
@@ -536,109 +1068,12 @@ Anti Pong!
 ## me
 ## games
 ## clojure
+## jamming
 .active[
 ## learning]
-## end
 ]
 .content[
-Mermaid Situation
-
-![screenshot]()
-
-.wrapper[with quil-cljs | Ludum Dare 37 | on GitHub]
-]]
-
----
-
-.box[
-.sidebar[
-## me
-## games
-## clojure
-.active[
-## learning]
-## end
-]
-.content[
-Cats, dogs, night time maybe?
-
-![screenshot]()
-
-.wrapper[with play-clj | Berlin Mini Jam  | on GitHub]
-]]
-
----
-
-.box[
-.sidebar[
-## me
-## games
-## clojure
-.active[
-## learning]
-## end
-]
-.content[
-Being famous is hard
-
-![screenshot]()
-
-.wrapper[with play-cljs | Global Game Jam 2017 | on GitHub]
-]]
-
----
-
-.box[
-.sidebar[
-## me
-## games
-## clojure
-.active[
-## learning]
-## end
-]
-.content[
-Creep Mate
-
-![screenshot]()
-
-.wrapper[with play-cljs | Lady Problems Hackathon  | on GitHub]
-]]
-
----
-
-class: center, middle
-
-# end
-
----
-
-.box[
-.sidebar[
-## me
-## games
-## clojure
-## learning
-.active[
-## end]
-]
-.content[
-Functional game programming
-]]
-
----
-
-.box[
-.sidebar[
-## me
-## games
-## clojure
-## learning
-.active[
-## end]
-]
-.content[
-Functional game programming
+## Functional game programming
 
 aka what about game state?
 ]]
@@ -650,16 +1085,20 @@ aka what about game state?
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Functional game programming
+## Functional game programming
 
 aka what about game state?
 
 It's awesome and it works
+
+says [John Carmack](http://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php)
+
+and I agree.
 ]]
 
 ---
@@ -669,12 +1108,12 @@ It's awesome and it works
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Favourite wtf moment
+## Favourite wtf moment
 ]]
 
 ---
@@ -684,15 +1123,19 @@ Favourite wtf moment
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Favourite wtf moment
+## Favourite wtf moment
 
 Trying to calculate a bounding circle
 and having to add another dependency
+
+````clojure
+here goes the code
+```
 ]]
 ---
 
@@ -701,12 +1144,12 @@ and having to add another dependency
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Favourite mind-blow moment
+## Favourite mind-blow moment
 ]]
 
 ---
@@ -716,12 +1159,12 @@ Favourite mind-blow moment
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Favourite mind-blow moment
+## Favourite mind-blow moment
 
 Having an atom that's only a function.
 
@@ -737,12 +1180,12 @@ And calling the atom.
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Favourite gotcha moment
+## Favourite gotcha moment
 ]]
 
 ---
@@ -752,12 +1195,12 @@ Favourite gotcha moment
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Favourite gotcha moment
+## Favourite gotcha moment
 
 cond vs condp vs case
 
@@ -787,12 +1230,12 @@ cond vs condp vs case
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Game engines I tried
+## Game engines I tried
 
 - quil(-cljs)
 - play-clj(s)
@@ -805,16 +1248,37 @@ Game engines I tried
 ## me
 ## games
 ## clojure
-## learning
+## jamming
 .active[
-## end]
+## learning]
 ]
 .content[
-Game engines I not try (yet)
+## Game engines I didn't try (yet)
+
+- [Arcadia](https://arcadia-unity.github.io/) (Unity3D and CLJ)
+- [Chocolatier](https://github.com/alexkehayias/chocolatier) (PixiJS rendering)
+- [Phzr](https://github.com/dparis/phzr) (CLJS wrapper for PhaserJS)
 
 
-[overview post on Lambda Island](https://www.lambdaisland.com/blog/08-12-2016-game-development-with-clojure-clojurescript)
+.souce[[overview post on Lambda Island](https://www.lambdaisland.com/blog/08-12-2016-game-development-with-clojure-clojurescript)]
 ]]
+
+---
+
+class: center
+# Takeaways!
+
+--
+
+Games are fun
+
+--
+
+Clojure is fun
+
+--
+
+Try both at the same time for maximum effect!
 
 ---
 
